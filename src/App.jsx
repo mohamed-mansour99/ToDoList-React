@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
 
-   const [todos,setTodos] = useState([123]);
+   const [todos,setTodos] = useState([ ]);
    const [inputVal,setInputVal] = useState('');
 
    function writeTodo(e){
@@ -18,7 +18,7 @@ function App() {
 
    function delTodo(todoIndex){
     setTodos((prevTodos) => prevTodos.filter((_,prevTodoIndex)=> {
-      return prevTodoIndex != todoIndex
+      return (prevTodoIndex != todoIndex)
     }));
   }
   return (
